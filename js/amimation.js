@@ -1,5 +1,4 @@
 
-window.onload = function() {
    
 
 var options = {
@@ -9,5 +8,3 @@ var options = {
     }
 
 var typed = new Typed("#name", options);
-
-}
