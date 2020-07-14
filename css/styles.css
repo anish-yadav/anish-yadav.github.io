@@ -21,6 +21,9 @@ body{
   border-radius: 20px;
   border: 3px solid #222;
 }
+button:focus{
+  outline: none !important;
+}
 a{
   text-decoration: none;
 }

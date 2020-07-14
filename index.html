@@ -34,7 +34,7 @@
             <a class="nav-link color-white mx-3" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link color-white mx-3" href="#">Work</a>
+            <a class="nav-link color-white mx-3" href="#work-1" onclick="scrollToWork()">Work</a>
           </li>
 
         </ul>
@@ -52,7 +52,7 @@
         <br>
         I'm a full stack web developer.
       </div>
-      <button class="home-button"> View my work <i class="material-icons">arrow_forward</i></button>
+      <button class="home-button" onclick="scrollToWork()"> View my work <i class="material-icons">arrow_forward</i></button>
     </div>
   </div>
   <div class="container-fluid  h-100 d-flex justify-content-center align-items-center" id="about">
@@ -190,6 +190,28 @@
       </div>
     </div>
   </div>
+  <div class="container-fluid  h-100" id="work-3">
+    <div class="container h-100 d-flex justify-content-center align-items-center">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+          <picture>
+            <source />
+            <img src="./img/Projects/ledger@2x.png" class="project" alt="Instudy">
+          </picture>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 d-flex flex-column justify-content-center">
+          <div class="project-name color-dark d-flex align-items-center">
+            Ledger
+            <span class="year bg-dark color-2">2020</span>
+          </div>
+          <p class="small-text mt-4 color-dark">India's largest youth run initiative in the field of blood donation.
+          </p>
+          <a href="https://www.bloodconnect.org" target="_blank"><button
+              class="home-button project-button bg-dark color-2">View Github</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
@@ -198,8 +220,10 @@
     integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
     crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
   <script src="./js/pt.min.js"></script>
   <script src="./js/mypts.js"></script>
+  
   <script src="./js/main.js"></script>
 </body>
 
