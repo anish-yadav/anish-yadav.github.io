@@ -1,5 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
 html , body {
     height: 100%;
+}
+*{
+    font-family: 'Nunito', sans-serif ; 
+}
+a,li,span,div,p,h1,h2,h4,h6{
+    font-family: 'Nunito', sans-serif !important;
+}
+span.typed-cursor{
+    display: none !important;
 }
 .mg-50 {
     margin-left:50px; 
