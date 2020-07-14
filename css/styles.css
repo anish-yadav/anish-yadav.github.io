@@ -21,15 +21,29 @@ body{
   border-radius: 20px;
   border: 3px solid #222;
 }
-
+a{
+  text-decoration: none;
+}
 .text{
   font-size: 32pt;
   line-height: 36pt;
+}
+.project-name{
+  font-size: 24pt;
+  font-weight: 600;
 }
 .small-text{
   font-size: 14pt;
   line-height: 24pt;
   max-width: 900px;
+  text-align: left !important;
+}
+.year{
+  font-size: 8pt;
+  padding: 2px 5px;
+  border-radius: 2px;
+  height: max-content;
+  margin-left: 8px;
 }
 .highlight{
   color: #ef106e;
@@ -60,8 +74,24 @@ body{
 .home-button:hover>i{
   transform: rotate(90deg) !important;
 }
+.project-button{
+  width: max-content !important;
+  border-radius: 50px;
+  font-size: 12pt !important;
+  border: 2px solid #FF351A;
+}
+.project-button.bg-dark{
+  width: max-content !important;
+  border-radius: 50px;
+  font-size: 12pt !important;
+  border: 2px solid #222;
+}
+
 .h-100{
-  height: 100vh !important;
+  min-height: 100vh !important;
+}
+.wd-max{
+  width: 100%;
 }
 .changing-background {
   background-color: #222;
@@ -71,7 +101,7 @@ body{
   background-color: #222 !important;
 }
 .bg-1{
-  background-color: #f38181 !important;
+  background-color: #FF351A !important;
 }
 .bg-2{
   background-color: #fce38a !important;
@@ -82,11 +112,24 @@ body{
 .bg-4{
   background-color: #95e1d3 !important;
 }
+
 .color-white{
   color: #fff !important;
 }
 .color-dark{
   color: #222 !important
+}
+.color-1{
+  color: #FF351A !important;
+}
+.color-2{
+  color: #fce38a !important;
+}
+.color-3{
+  color: #eaffd0 !important;
+}
+.color-4{
+  color: #95e1d3 !important;
 }
 .home{
   position: relative;
@@ -109,4 +152,8 @@ body{
   position: absolute;
   top: 0;
   width: 100vw;
+}
+.project{
+  max-width: 400px;
+  max-height: 300px;
 }
