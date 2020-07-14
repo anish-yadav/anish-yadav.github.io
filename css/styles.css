@@ -4,16 +4,68 @@
 body{
   overflow-x: hidden;
 }
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #ef106e #222;
+}
+
+/* Works on Chrome/Edge/Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+*::-webkit-scrollbar-track {
+  background: #222;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #ef106e;
+  border-radius: 20px;
+  border: 3px solid #222;
+}
+
 .text{
   font-size: 32pt;
   line-height: 36pt;
+}
+.small-text{
+  font-size: 14pt;
+  line-height: 24pt;
+  max-width: 900px;
 }
 .highlight{
   color: #ef106e;
   font-weight: 600;
 }
+.home-button{
+  padding: 12px 20px ;
+  width: 230px;
+  border: 2px solid #fff;
+  font-size: 16pt;
+  background : transparent;
+  color: #fff;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.25s ease-in-out;
+}
+.home-button:hover{
+  background-color: #ef106e;
+  border: 2px solid #ef106e;
+}
+.home-button>i{
+  transform: rotate(0deg);
+  transition: transform 0.25s ease-in-out;
+}
+.home-button:hover>i{
+  transform: rotate(90deg) !important;
+}
 .h-100{
   height: 100vh !important;
+}
+.changing-background {
+  background-color: #222;
+  transition: background-color 0.25s ease-out;
 }
 .bg-dark{
   background-color: #222 !important;
@@ -41,9 +93,11 @@ body{
   display: flex;
   text-align: center;
   justify-content: center;
+  align-items: center;
 }
 .home-content{
   z-index: 999;
+  height: max-content;
 }
 .hide{
   display: none;;
