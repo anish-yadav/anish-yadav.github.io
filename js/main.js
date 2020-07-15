@@ -2,6 +2,7 @@
 window.onscroll = changeBG
 window.onload = changeBG
 const navbar = document.getElementById('navbar')
+const navbarIcon = document.getElementById('navbarTogglerIcon')
 const home = document.getElementById('home')
 const about = document.getElementById('about')
 const work1 = document.getElementById('work-1')
@@ -17,12 +18,16 @@ const navItemDark = () => {
         navItems[i].classList.remove('color-white')
         navItems[i].classList.add('color-dark')
     }
+    navbarIcon.classList.remove('color-white')
+    navbarIcon.classList.add('color-dark')
 }
 const navItemWhite = () => {
     for (var i = 0; i < 3; i++) {
         navItems[i].classList.remove('color-dark')
         navItems[i].classList.add('color-white')
     }
+    navbarIcon.classList.remove('color-dark')
+    navbarIcon.classList.add('color-white')
 }
 const showNavbar = (color) => {
     navbar.classList.remove('hide')
@@ -95,12 +100,13 @@ function changeBG() {
         document.body.classList.remove('bg-dark', 'bg-2', 'bg-1', 'bg-3','bg-4','bg-5')
         document.body.classList.add('bg-5')
         showNavbar('bg-5')
-        navItemDark()
+        navItemWhite()
     }
     else {
         document.body.classList.remove('bg-1', 'bg-dark', 'bg-2', 'bg-3','bg-4','bg-5')
         document.body.classList.add('bg-dark')
         showNavbar('bg-dark')
+        navItemWhite()
     }
 }
 
