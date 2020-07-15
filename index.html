@@ -9,6 +9,7 @@
     integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./css/styles.css">
   <link rel="stylesheet" href="./css/skills.css">
 
@@ -52,9 +53,12 @@
         <br>
         I'm a full stack web developer.
       </div>
-      <button class="home-button" onclick="scrollToWork()"> View my work <i class="material-icons">arrow_forward</i></button>
+      <button class="home-button" onclick="scrollToWork()"> View my work <i
+          class="material-icons">arrow_forward</i></button>
     </div>
   </div>
+
+  <!-- About Me -->
   <div class="container-fluid  h-100 d-flex justify-content-center align-items-center" id="about">
     <div class="container">
       <div class="row">
@@ -145,36 +149,15 @@
   </div>
 
 
-  <div class="container-fluid " id="work-1">
-    <div class="text text-center color-white">Recent works</div>
+  <!-- Works -->
+  <div class="container-fluid" id="work-2">
+    <div class="text text-center color-dark">Recent works</div>
     <div class="container h-100 d-flex justify-content-center align-items-center">
       <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
           <picture>
             <source />
-            <img src="./img/Projects/bloodconnect@2x.png" class="project" alt="Bloodconnect">
-          </picture>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12">
-          <div class="project-name color-white d-flex align-items-center">
-            BloodConnect
-            <span class="year bg-white color-1">2020</span>
-          </div>
-          <p class="small-text mt-4 color-white">India's largest youth run initiative in the field of blood donation.
-          </p>
-          <a href="https://www.bloodconnect.org" target="_blank"><button
-              class="home-button project-button bg-white color-1">Visit Website</button></a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="container-fluid  h-100" id="work-2">
-    <div class="container h-100 d-flex justify-content-center align-items-center">
-      <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
-          <picture>
-            <source />
-            <img src="./img/Projects/instudy@2x.png" class="project" alt="Instudy">
+            <img data-src="./img/Projects/instudy@2x.png" class="project lazy" alt="Instudy">
           </picture>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12 d-flex flex-column justify-content-center">
@@ -190,13 +173,36 @@
       </div>
     </div>
   </div>
+  <div class="container-fluid " id="work-1">
+    
+    <div class="container h-100 d-flex justify-content-center align-items-center">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+          <picture>
+            <source />
+            <img data-src="./img/Projects/bloodconnect@2x.png" class="project lazy" alt="Bloodconnect">
+          </picture>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="project-name color-white d-flex align-items-center">
+            BloodConnect
+            <span class="year bg-white color-1">2020</span>
+          </div>
+          <p class="small-text mt-4 color-white">India's largest youth run initiative in the field of blood donation.
+          </p>
+          <a href="https://www.bloodconnect.org" target="_blank"><button
+              class="home-button project-button bg-white color-1">Visit Website</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="container-fluid  h-100" id="work-3">
     <div class="container h-100 d-flex justify-content-center align-items-center">
       <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
           <picture>
             <source />
-            <img src="./img/Projects/ledger@2x.png" class="project" alt="Instudy">
+            <img data-src="./img/Projects/ledger@2x.png" class="project lazy" alt="Instudy">
           </picture>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12 d-flex flex-column justify-content-center">
@@ -212,6 +218,64 @@
       </div>
     </div>
   </div>
+  <div class="container-fluid  h-100" id="work-4">
+    <div class="container h-100 d-flex justify-content-center align-items-center">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+          <picture>
+            <source />
+            <img data-src="./img/Projects/chat-app@2x.png" class="project lazy" alt="Instudy">
+          </picture>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 d-flex flex-column justify-content-center">
+          <div class="project-name color-dark d-flex align-items-center">
+            Chat App
+            <span class="year bg-dark color-2">2020</span>
+          </div>
+          <p class="small-text mt-4 color-dark">India's largest youth run initiative in the field of blood donation.
+          </p>
+          <a href="https://www.bloodconnect.org" target="_blank"><button
+              class="home-button project-button bg-dark color-2">View Github</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container-fluid h-100 d-flex flex-column justify-content-between" id="footer">
+    <div class="container bg-dark py-5 banner ">
+      <div class="row justify-content-between">
+        <div class="col-lg-3 text-center d-flex align-items-center justify-content-center">
+          <div class="heading color-white">Start a project</div>
+        </div>
+        <div class="col-lg-4  text-center d-flex align-items-center">
+          <p class="smaller-text color-white text-center mb-0">Interested in working together? We should queue up a chat. I’ll buy the coffee.</p>
+        </div>
+        <div class="col-lg-3 text-center d-flex align-items-center justify-content-center">
+          <button class="home-button project-button border-white"> Let's do this </button>
+        </div>
+      </div>
+      
+      
+    </div>
+    <div class="container d-flex flex-column justify-content-center align-items-center">
+        <img src="./img/Projects/small@4x.png" width="70" alt="">
+        <div class="footer-heading color-white text-center mt-4">Living, learning, & leveling up <br>
+        one day at a time</div>
+        <ul class="footer-list mt-4">
+          <li class="footer-item">
+            <i class="fa fa-github"></i>
+          </li>
+          <li class="footer-item">
+            <i class="fa fa-linkedin"></i>
+          </li>
+          <li class="footer-item">
+            <i class="fa fa-envelope"></i>
+          </li>
+        </ul>
+
+        <p class="smaller-text text-center color-white">Handcrafted by me &copy; twentytwenty</p>
+    </div>
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
@@ -221,10 +285,15 @@
     crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.1.0/dist/lazyload.min.js"></script>
   <script src="./js/pt.min.js"></script>
   <script src="./js/mypts.js"></script>
-  
   <script src="./js/main.js"></script>
+  <script>
+    var lazyLoadInstance = new LazyLoad({
+      // Your custom settings go here
+    });
+  </script>
 </body>
 
 </html>

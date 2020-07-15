@@ -31,15 +31,31 @@ a{
   font-size: 32pt;
   line-height: 36pt;
 }
-.project-name{
+.project-name, .heading{
   font-size: 24pt;
   font-weight: 600;
+}
+.footer-heading{
+  font-size: 20pt;
+  font-weight: 400;
 }
 .small-text{
   font-size: 14pt;
   line-height: 24pt;
   max-width: 900px;
-  text-align: left !important;
+  text-align: left ;
+}
+.smaller-text{
+  font-size: 12pt;
+  line-height: 24pt;
+  max-width: 900px;
+  text-align: left ;
+}
+.copyright{
+  font-size: 12pt;
+}
+.small-text.text-center{
+  text-align: center !important;
 }
 .year{
   font-size: 8pt;
@@ -56,6 +72,7 @@ a{
   padding: 12px 20px ;
   width: 230px;
   border: 2px solid #fff;
+  border-radius: 50px;
   font-size: 16pt;
   background : transparent;
   color: #fff;
@@ -66,7 +83,14 @@ a{
   align-items: center;
   transition: background-color 0.25s ease-in-out;
 }
-.home-button:hover{
+.border-white{
+  border: 2px solid #fff;
+}
+.border-white:hover{
+  background-color: #ef106e;
+  border: 2px solid #ef106e !important;
+}
+.home-button:hover,.border-white:hover{
   background-color: #ef106e;
   border: 2px solid #ef106e;
 }
@@ -93,6 +117,9 @@ a{
 .h-100{
   min-height: 100vh !important;
 }
+.h-80{
+  min-height: 80vh !important;
+}
 .wd-max{
   width: 100%;
 }
@@ -115,6 +142,9 @@ a{
 .bg-4{
   background-color: #95e1d3 !important;
 }
+.bg-5{
+  background-color: #9c76cc !important;
+}
 
 .color-white{
   color: #fff !important;
@@ -133,6 +163,9 @@ a{
 }
 .color-4{
   color: #95e1d3 !important;
+}
+.color-5{
+  color: #9c76cc !important;
 }
 .home{
   position: relative;
@@ -159,4 +192,35 @@ a{
 .project{
   max-width: 400px;
   max-height: 300px;
+}
+.banner{
+  border-radius: 10px;
+}
+
+.footer-list{
+  list-style-type: none;
+}
+.footer-item{
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #9c76cc;
+  border: 2px solid #a583d1;
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  margin-left: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.footer-item>i{
+  font-size: 24px;
+  color: #fff;
+}
+.footer-item:hover{
+  background-color: #fff;
+}
+.footer-item:hover>i{
+  color: #9c76cc;
 }
