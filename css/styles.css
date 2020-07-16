@@ -217,14 +217,14 @@ a{
   margin-right: 5px;
   cursor: pointer;
 }
-.footer-item>i{
-  font-size: 24px;
+.footer-item i{
+  font-size: 18px;
   color: #fff;
 }
 .footer-item:hover{
   background-color: #fff;
 }
-.footer-item:hover>i{
+.footer-item:hover i{
   color: #141726;
 }
 
