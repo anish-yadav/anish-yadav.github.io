@@ -88,7 +88,7 @@ function changeBG() {
         document.body.classList.remove('bg-dark', 'bg-2', 'bg-1', 'bg-3','bg-4','bg-5')
         document.body.classList.add('bg-3')
         showNavbar('bg-3')
-        navItemDark()
+        navItemWhite()
     }
     else if (Math.abs(work4FromTop) < work4.clientHeight / 2) {
         document.body.classList.remove('bg-dark', 'bg-2', 'bg-1', 'bg-3','bg-4','bg-5')
